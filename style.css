@@ -46,13 +46,13 @@ section {
 
 h1{
     font-family: Kaushan Script, sans-serif;
-    font-size: 100px;
+    font-size: 6.25rem;
     margin-bottom: 0;
 }
 
 h2 {
     color: var(--on-background-alt);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
 }
 
@@ -60,7 +60,7 @@ nav {
     z-index: 10;
     position: fixed;
     font-family: Oswald, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     padding: 25px;
     width: 100vw;
@@ -105,8 +105,8 @@ a{
 }
 
 img {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     /* margin-top: 15px; */
 }
 
@@ -327,6 +327,113 @@ label {
     .toggle-text {
         display: none;
     }
+
 }
 
+
+@media only screen and (max-width : 575px) {
+
+    .image-container{
+        height: 15rem;
+        width: 15rem;
+        margin: 25px auto;
+    }
+
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        
+    }
+
+    #burger:checked + .menu {
+        display: block;
+    }
+
+    .toggle-text {
+        display: none;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width : 409px) {
+
+    .image-container{
+        max-width: 100%;
+        height: auto;
+        margin-left: 105px;
+    }
+
+    #projects h1{
+        margin-left: 50px;
+    }
+
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        
+    }
+
+    #burger:checked + .menu {
+        display: block;
+    }
+
+    .toggle-text {
+        display: none;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        margin-left: 110px;
+    }
+
+    .title-group h1{
+        margin-left: 30px;
+    }
+    .title-group h2{
+        margin-left: 80px;
+    }
+
+    .download a{
+        margin-left: 100px;
+    }
+
+}
 
