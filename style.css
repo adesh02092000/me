@@ -26,6 +26,9 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: auto;
+}
 body {
     margin: 0;
     color: var(--on-background);
@@ -375,65 +378,21 @@ label {
 }
 
 
-@media only screen and (max-width : 409px) {
+@media only screen and (max-width : 470px) {
 
-    .image-container{
-        max-width: 100%;
-        height: auto;
-        margin-left: 105px;
+    html {
+        overflow-x: hidden;
     }
 
-    #projects h1{
-        margin-left: 50px;
+    #skills{
+        margin: 0;
+        margin-left: -80px;
     }
 
-    img {
-        height: 10rem;
-        width: 10rem;
+    #skills h1{
+        font-size: 5rem;
     }
 
-    label {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-
-    .menu a {
-        display: block;
-        
-    }
-
-    #burger:checked + .menu {
-        display: block;
-    }
-
-    .toggle-text {
-        display: none;
-    }
-
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-        margin-left: 110px;
-    }
-
-    .title-group h1{
-        margin-left: 30px;
-    }
-    .title-group h2{
-        margin-left: 80px;
-    }
-
-    .download a{
-        margin-left: 100px;
-    }
 
 }
 
