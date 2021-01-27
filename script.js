@@ -2,6 +2,7 @@ const toggleSwitch = document.querySelector('input[type="checkbox"]');
 
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
+const img0 = document.getElementById('img0');
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
@@ -14,6 +15,7 @@ function darkMode() {
     toggleIcon.children[0].textContent = "Dark Mode";
     toggleIcon.children[1].classList.remove('fa-sun');
     toggleIcon.children[1].classList.add('fa-moon');
+    img0.src = 'img/Blog_dark.svg';
     img1.src = 'img/secrets_dark.svg';
     img2.src = 'img/rest_dark.svg';
     img3.src = 'img/Journal_dark.svg';
@@ -27,6 +29,7 @@ function lightMode() {
     toggleIcon.children[0].textContent = "Light Mode";
     toggleIcon.children[1].classList.remove('fa-moon');
     toggleIcon.children[1].classList.add('fa-sun');
+    img0.src = 'img/Blog_light.svg';
     img1.src = 'img/secrets_light.svg';
     img2.src = 'img/rest_light.svg';
     img3.src = 'img/Journal_light.svg';

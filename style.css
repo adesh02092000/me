@@ -271,7 +271,7 @@ label {
 }
 
 .JavaScript {
-    width: 85%;
+    width: 80%;
     animation: name 2s;
 }
 
@@ -297,6 +297,16 @@ label {
 
 .Git {
     width: 90%;
+    animation: name 2s;
+}
+
+.django {
+    width: 85%;
+    animation: name 2s;
+}
+
+.MySQL {
+    width : 80%;
     animation: name 2s;
 }
 
